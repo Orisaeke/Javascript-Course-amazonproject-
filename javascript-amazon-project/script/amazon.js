@@ -59,7 +59,7 @@ products.forEach((product) => {
 
 document.querySelector('.js-products-grid').innerHTML = productsHTML;
 
-//add to cart
+//add to cart / making it iteractive
 document.querySelectorAll('.js-add-to-cart')
     .forEach((button) => {
         button.addEventListener('click', () => {
@@ -82,6 +82,14 @@ document.querySelectorAll('.js-add-to-cart')
                 });
             }
 
-            console.log(cart);
+            let carQuantity = 0;
+
+            cart.forEach((item) => {
+                carQuantity += item.quantity;
+            });
+
+            document.querySelector('.js-cart-quantity')
+            .innerHTML = carQuantity;
+
         });
     });
