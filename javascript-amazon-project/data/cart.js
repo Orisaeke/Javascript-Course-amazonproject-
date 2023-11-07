@@ -1,2 +1,2 @@
 //cart array
-const cart = [];
+export const cart = [];
