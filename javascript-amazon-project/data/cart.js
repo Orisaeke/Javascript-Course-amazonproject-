@@ -1,7 +1,7 @@
 //cart array
 export const cart = [];
 
-//adds cart function
+//adds cart functions
 export function addToCart(productId) {
     //to check the cart for quantity and items
     let matchingItem;
