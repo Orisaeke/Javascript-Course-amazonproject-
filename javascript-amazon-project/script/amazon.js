@@ -1,6 +1,9 @@
 //importing the variable 'cart' from the file cart.js
 import {cart} from '../data/cart.js';
 
+//importing the variable 'products' from the file products.js
+import { products} from '../data/products.js';
+
 //combining the strings together
 let productsHTML = '';
 
